@@ -8,6 +8,10 @@ target 'ChatBotTest' do
 
   use_react_native!(:path => config["reactNativePath"])
 
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-Microphone', :path => "#{permissions_path}/Microphone"
+  pod 'Permission-SpeechRecognition', :path => "#{permissions_path}/SpeechRecognition"
+
   target 'ChatBotTestTests' do
     inherit! :complete
     # Pods for testing

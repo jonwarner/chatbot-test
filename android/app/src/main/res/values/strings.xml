@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ChatBotTest</string>
+    <string name="blob_provider_authority">com.chatbottest.blobs</string>
 </resources>
